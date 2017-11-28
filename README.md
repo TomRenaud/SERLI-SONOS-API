@@ -1,11 +1,5 @@
-[![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.me/jishi "Donate once-off to this project using Paypal") [![Join the chat at gitter](https://img.shields.io/gitter/room/badges/shields.svg)](https://gitter.im/node-sonos-http-api/Lobby "Need assistance? Join the chat at Gitter.im") 
-
-Feel free to use it as you please. Consider donating if you want to support further development. Reach out on the gitter chat if you have issues getting it to run, instead of creating new issues, thank you!
-
-If you are also looking for cloud control (ifttt, public webhooks etc), see the [bronos-client](http://www.bronos.net) project! That pi image also contains an installation of this http-api.  
-
-SONOS HTTP API
-==============
+SERLI SONOS HTTP API
+====================
 
 ** Beta is no more, master is up to date with the beta now! **
 
@@ -50,13 +44,15 @@ Now you can control your system by invoking the following commands:
 Example:
 
 `http://localhost:5005/button-sound`
-(will play the sound from button-sound configuration into the SONOS from source `https://soundbox.cleverapps.io`)
+(will play the sound from button-sound configuration into the SONOS)
+-> Sounds : `https://soundbox.cleverapps.io`
 
 `http://localhost:5005/button-say`
 (will say the phrase from button-say configuration into the SONOS)
 
 `http://localhost:5005/soundbox/:sound`
-(will play the sound specified in the url into the SONOS from source `https://soundbox.cleverapps.io`)
+(will play the sound specified in the url into the SONOS)
+-> Sounds : `https://soundbox.cleverapps.io`
 
 `http://localhost:5005/living room/volume/15`
 (will set volume for room Living Room to 15%)
@@ -79,6 +75,9 @@ Example:
 
 The actions supported as of today:
 
+* button-sound
+* button-say
+* soundbox
 * play
 * pause
 * playpause (toggles playing state)
