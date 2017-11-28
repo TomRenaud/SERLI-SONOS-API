@@ -41,18 +41,18 @@ Now you can control your system by invoking the following commands:
 	http://localhost:5005/{room name}/sleep/{timeout in seconds or "off"}
 	http://localhost:5005/{room name}/{action}[/{parameter}]
 
-Example:
+Examples:
 
 `http://localhost:5005/button-sound`
 (will play the sound from button-sound configuration into the SONOS)
-<p>Sounds : `https://soundbox.cleverapps.io`</p>
+<p>Sounds : https://soundbox.cleverapps.io</p>
 
 `http://localhost:5005/button-say`
 (will say the phrase from button-say configuration into the SONOS)
 
 `http://localhost:5005/soundbox/:sound`
 (will play the sound specified in the url into the SONOS)
-<p>Sounds : `https://soundbox.cleverapps.io`</p>
+<p>Sounds : https://soundbox.cleverapps.io</p>
 
 `http://localhost:5005/living room/volume/15`
 (will set volume for room Living Room to 15%)
